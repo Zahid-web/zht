@@ -14,22 +14,85 @@
 			font-size: 25px;
 			text-align: right;
 		}
-		html1{
-			font-size: 20px;
+		
+	/*	.skyblue{
+			color: skyblue;
+		}*/
+
+		h2.red{
+			color: red;
+		}
+		
+		div>h3{
+			color:blue;
+		}
+
+		div h3{
+			background-color: yellow;
+		}
+
+/*This is used to remove the style here bullets from the list*/
+
+		.skyblue li{
+			list-style: none;
+		}
+
+
+		a:link, a:visited{
+			text-decoration: none; /*removes underline from the text*/
+			background-color: green;
+			border: 1px solid blue;
+			color: black;
+			display: block;   /*fills all the space within the line*/
+			width: 200px;
+			text-align: center;
+			margin-bottom: 1px;
+		}
+
+
+		a:hover, a:active{
+			background-color: red;
+			color:white;
+		}
+
+		/*If you wnat ot target a particular element in from a list of elements*/
+
+		div li:nth-child(4){
+			font-size: 30px;
+		}
+		section div:nth-child(odd){
+			background-color: grey;
+			color: blue;
+		}
+		section div:nth-child(4):hover{
+			background-color: red;
+			cursor: pointer;
 		}
 	</style>
 </head>
 <body>
 <h1>WElcome to  coursera, this is the best learning platform,<br>that I have went through, till now.</h1>
-<div id="html1">
-	<h2>List of items that i have learned.</h2>
-	<ul>
-		<li><a href="Heading.html">Headings</a></li>
+<div class="skyblue">
+	<h2 class="red">List of items that i have learned.</h2>
+	<h3>Following is a</h3>
+	<ul id="html1">
+		<h3>List of items:</h3>
+		<li class="red"><a href="Heading.html">Headings</a></li>
 		<li><a href="html_entities_after.html">Entities</a> </li>
 		<li><a href="links_internal.html">Links</a> </li>
 		<li><a href="unorder-list-before.html">Lists</a> </li>
 	</ul>
 </div>
-<footer> zahid</footer>
+<hr>
+<section>
+	<div>Div 1</div>
+	<div>Div 2</div>
+	<div>Div 3</div>
+	<div>Div 4</div>
+	<div>Div 5</div>
+	<div>div 6</div>
+	<div>Div 7</div>
+	<div>Div 8</div>
+</section>
 </body>
 </html>
