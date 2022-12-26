@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BoxModel</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			/*The will be applied to every content, it is called universal selector*/
+		}
+
+		body {
+			background-color: gray;
+			margin: 0;
+			padding: 0;
+		}
+
+		#box {
+			background-color: blue;
+			padding: 10px;
+			border: 3px solid black;
+			margin:40px;
+			width: 300px;
+			height: 100px;  /*Because the height of the box is only 60 px. the content of the box overflows. and if we add another content below the box, it overlaps. to prevent this we use overflow property below.*/
+			overflow: auto; /* hidden, auto, scroll, etc*/
+			/*box-sizing: border-box;*/
+		}
+		#content{
+			background-color: #90EE90;
+		}
+
+		h1 {
+			margin-bottom: 30px;  /*(commulitative margin): If two contents are side by side and we set right margin of one as 2px and left margin of other as 3px, then the net margin between the two is 5px.
+			(collapsing margin): But if the two boxes or contents are top of one another then the largest margin wins. for example the h1 box and #box are vertically on one another, and if we set the top-margin of #box as 20px the net margin between the 2 will reamin 30px(bottom margin of h1.*/
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Box Model</h1>
+	<div id="box">
+		<div id="content">
+			"I disapprove of what you say but i will defend to death your right to say it". Voltaire
+
+			"...the sole end for which mankind are warranted, individually or collectively, in interfering with the liberty of action of any of their number, is self-protection. That the only purpose ofr which power can be rightfully exercised over any member of a civilised community, against his will, is to prevent harm to others" John stuart mill.
+		</div>
+	</div>
+</body>
+</html>
