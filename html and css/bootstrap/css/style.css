@@ -63,3 +63,10 @@
 			background-color: red;
 			cursor: pointer;
 		}
+		.row{
+			margin-bottom: 10px;
+		}
+		.row > div{
+			border: 1px solid red;
+			background-color: gray;
+		}
