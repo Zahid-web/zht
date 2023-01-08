@@ -12,5 +12,33 @@ body {
 	width: 100px;
 	height: 100px;
 	margin: 10px,15px,10px, 0;
+	float: left;
 	
+}
+.navbar-brand{
+	padding: 25px;
+}
+
+.navbar-brand h1{
+	font-family: Loar, serif;
+	font-size: 1.5 em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.navbar-brand p{
+	text-transform: uppercase;
+	font-size: .75em;
+	margin-top: 15px;
+
+}
+
+.navbar-brand p span{
+	vertical-align: middle;
 }
