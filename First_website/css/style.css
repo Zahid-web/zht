@@ -12,11 +12,13 @@ body {
 	width: 100px;
 	height: 100px;
 	margin: 10px,15px,10px, 0;
-	float: left;
+	display: inline;
+		
 	
 }
 .navbar-brand{
 	padding: 25px;
+	display: inline;
 }
 
 .navbar-brand h1{
@@ -41,4 +43,7 @@ body {
 
 .navbar-brand p span{
 	vertical-align: middle;
+}
+.navbar-toggler{
+	float: right;
 }
